@@ -46,11 +46,11 @@ const Footer: React.FC<HomeBannerProps> = ({ image, data }) => {
             style={{ fontSize: data?.titleFontSize || 42 }}
             className="font-bold capitalize text-3xl lg:text-4xl mt-1"
           >
-            We're Here to Help
+            We&apos;re Here to Help
           </h1>
           <p className="text-gray-300 mx-auto mt-4 max-w-3xl">
             Whether you need support or just want to say hello, reach out to us
-            anytime. We’re happy to assist you.
+            anytime. We&apos;re happy to assist you.
           </p>
         </div>
 

@@ -12,7 +12,7 @@ interface HomeBannerProps {
   };
 }
 
-const Choose: React.FC<HomeBannerProps> = ({ image, data }) => {
+const Choose: React.FC<HomeBannerProps> = () => {
   return (
     <FullContainer className="py-32 px-10 mt-8 relative overflow-hidden bg-white">
       <div className="absolute top-0 left-0 w-full h-full " />

@@ -1,5 +1,4 @@
 import React from 'react'
-import About from '../../../components/home/About'
 import Navbar from '../../../components/common/Navbar'
 import AboutBanner from '../../../components/about/AboutBanner'
 import OurJourney from '../../../components/about/OurJourney'

@@ -1,7 +1,6 @@
 import React from 'react'
 import Navbar from '../../../components/common/Navbar'
 import AboutBanner from '../../../components/about/AboutBanner'
-import FeauturedServices from '../../../components/services/FeauturedServices'
 import Footer from '../../../components/common/Footer'
 import Form from '../../../components/contact/Form'
 import OpeningHour from '../../../components/contact/OpeningHour'

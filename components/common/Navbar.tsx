@@ -15,7 +15,7 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({
   logo = "/img/logo.png",
-  imagePath = "/img",
+  // imagePath = "/img",
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();

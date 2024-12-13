@@ -14,7 +14,7 @@ interface HomeBannerProps {
   };
 }
 
-const FeaturedService: React.FC<HomeBannerProps> = ({ image, data }) => {
+const FeaturedService: React.FC<HomeBannerProps> = ({ data }) => {
   return (
     <FullContainer>
       <Container>

@@ -2,11 +2,11 @@ import React from "react";
 import Image from "next/image";
 import Container from "../common/Container";
 import FullContainer from "../common/FullContainer";
-import Link from "next/link";
+
 // Define prop types for data
 interface HomeBannerProps {
   image: string; // Image URL or path
-  title:String;
+  title:string;
   data?: {
     opacity?: number;
     textColor?: string;

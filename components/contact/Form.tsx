@@ -1,6 +1,5 @@
 import React from "react";
 import FullContainer from "../common/FullContainer";
-import { Container } from "postcss";
 import Image from "next/image";
 
 export default function Form() {
