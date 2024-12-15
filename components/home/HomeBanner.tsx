@@ -7,6 +7,7 @@ import Link from "next/link";
 interface HomeBannerProps {
   image: string;
   title: string;
+  imageTitle:string;
   paragraph: string;
   data?: {
     opacity?: number;
@@ -20,6 +21,7 @@ const HomeBanner: React.FC<HomeBannerProps> = ({
   title,
   image,
   data,
+  imageTitle,
 }) => {
   return (
     <FullContainer
@@ -33,7 +35,7 @@ const HomeBanner: React.FC<HomeBannerProps> = ({
       <Image
         src={image || "/img/1.jpg"} // If image is not provided, fallback to "/img/1.jpg"
         alt="Banner Image"
-        title="Banner"
+        title={ imageTitle || "Banner"}
         priority
         fill
         loading="eager"

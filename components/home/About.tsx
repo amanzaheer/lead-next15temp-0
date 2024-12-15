@@ -1,8 +1,8 @@
-import React from 'react'
-import FullContainer from '../common/FullContainer'
-import Container from '../common/Container'
-import Image from 'next/image'
-import Link from 'next/link'
+import React from "react";
+import FullContainer from "../common/FullContainer";
+import Container from "../common/Container";
+import Image from "next/image";
+import Link from "next/link";
 
 interface AboutProps {
   data?: {
@@ -22,7 +22,6 @@ const About: React.FC<AboutProps> = ({ data }) => {
             height="1000"
             alt="Banner Image"
             title="Banner"
-           
           />
         </div>
 
@@ -48,20 +47,23 @@ const About: React.FC<AboutProps> = ({ data }) => {
               </p>
 
               <p className="mb-8 text-gray-600">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae, viva la vida
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae, viva la vida
               </p>
 
               {/* Contact Us Button */}
               <div className="">
-              <div className=" px-4 py-4 bg-primary  w-44  rounded-md ">
-                <Link
-                  href="/contact"
-                  className=" text-white flex justify-center text-center "
-                >
-                  Contact Us
-                </Link>
+                <div className=" px-4 py-4 bg-primary  w-44  rounded-md ">
+                  <Link
+                    href="/contact"
+                    className=" text-white flex justify-center text-center "
+                  >
+                    Contact Us
+                  </Link>
+                </div>
               </div>
-            </div>
             </div>
           </div>
 
@@ -73,13 +75,12 @@ const About: React.FC<AboutProps> = ({ data }) => {
               height="400"
               alt="Banner Image"
               title="Banner"
-              
             />
           </div>
         </div>
       </Container>
     </FullContainer>
-  )
-}
+  );
+};
 
 export default About;

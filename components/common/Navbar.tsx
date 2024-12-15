@@ -26,13 +26,13 @@ const Navbar: React.FC<NavbarProps> = ({
 
   const getLinkClass = (path: string): string => {
     return pathname === path
-      ? "text-primary border-b"
+      ? "text-primary "
       : "text-black hover:text-primary ";
   };
 
   return (
     <FullContainer className="bg-white sticky top-0 z-20 py-3 shadow-sm">
-      <Container className="md:flex-row md:justify-between">
+      <Container className="   md:flex-row md:justify-between">
         <Image
           height={100}
           width={80}
@@ -57,14 +57,14 @@ const Navbar: React.FC<NavbarProps> = ({
           <Link
             title="About Us"
             href="/about-us"
-            className={getLinkClass("/about")}
+            className={getLinkClass("/about-us")}
           >
             About Us
           </Link>
           <Link
             title="FAQs"
             href="/our-services"
-            className={getLinkClass("/faqs")}
+            className={getLinkClass("/our-services")}
           >
             Services
           </Link>
@@ -75,12 +75,8 @@ const Navbar: React.FC<NavbarProps> = ({
           >
             Contact Us
           </Link>
-          <Link
-            title="Blog"
-            href="/blog"
-            className={getLinkClass("/blogs")}
-          >
-           Our Blog
+          <Link title="Blog" href="/blog" className={getLinkClass("/blog")}>
+            Our Blog
           </Link>
         </div>
 

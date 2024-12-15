@@ -7,6 +7,7 @@ import Link from "next/link";
 
 interface HomeBannerProps {
   image: string; // Image URL or path
+  contact_details:string,
   data?: {
     opacity?: number;
     textColor?: string;
@@ -14,7 +15,12 @@ interface HomeBannerProps {
   };
 }
 
-const Footer: React.FC<HomeBannerProps> = ({ image, data }) => {
+const Footer: React.FC<HomeBannerProps> = ({
+   image,
+    data,
+    contact_details
+  
+  }) => {
   return (
     <FullContainer
       className="py-20 px-10 relative overflow-hidden"
@@ -62,7 +68,8 @@ const Footer: React.FC<HomeBannerProps> = ({ image, data }) => {
               <Clock className="text-white" size={36} />
             </div>
             <h3 className="font-semibold text-lg text-gray-800 capitalize mt-4">
-              Opening Hours
+            { contact_details|| "Opening Hours"} 
+            
             </h3>
             <p className="text-gray-600 mt-2">
             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere, penci design viva la vida.
@@ -75,7 +82,7 @@ const Footer: React.FC<HomeBannerProps> = ({ image, data }) => {
               <Phone className="text-white" size={36} />
             </div>
             <h3 className="font-semibold text-lg text-gray-800 capitalize mt-4">
-              Hotline
+             { contact_details|| "Hotline"} 
             </h3>
             <p className="text-gray-600 mt-2">
             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere.
@@ -88,7 +95,7 @@ const Footer: React.FC<HomeBannerProps> = ({ image, data }) => {
               <Mail className="text-white" size={36} />
             </div>
             <h3 className="font-semibold text-lg text-gray-800 capitalize mt-4">
-              Email Us
+            { contact_details|| " Email Us"} 
             </h3>
             <p className="text-gray-600 mt-2">
             Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere, penci design viva la vida.

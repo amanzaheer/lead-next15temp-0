@@ -75,7 +75,7 @@ export default async function BlogDetail({
           </Link>
         </div>
       </div>
-      <Footer image={""} />
+      <Footer image={""} contact_details={""} />
     </>
   );
 }
