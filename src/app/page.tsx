@@ -32,7 +32,7 @@ const Home: React.FC<HomeProps> = ({
   logo,
   blog_list,
   imagePath,
-  project_id,
+  
   categories,
   domain,
   meta,
