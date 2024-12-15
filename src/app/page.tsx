@@ -33,7 +33,7 @@ const Home: React.FC<HomeProps> = ({
   blog_list,
   imagePath,
   project_id,
-  
+
   categories,
   domain,
   meta,
@@ -199,6 +199,3 @@ const Home: React.FC<HomeProps> = ({
 // };
 
 export default Home;
-
-
-
